@@ -1,0 +1,28 @@
+{
+  "title": "Colors Quiz",
+  "timePerQuestion": 20,
+  "points": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "أنهي قيمة من دول لون أحمر صحيح؟",
+      "options": ["#ff0000", "#gg0000", "red()", "rgb(red)"],
+      "answer": 0,
+      "explanation": "#ff0000 هو كود hex صحيح للأحمر."
+    },
+    {
+      "type": "tf",
+      "question": "rgb(0, 0, 0) بيدّي لون أسود.",
+      "answer": true,
+      "explanation": "صفر في كل القنوات = أسود."
+    },
+    {
+      "type": "cc",
+      "question": "أكمل الكود: عايز لون النص أزرق.",
+      "code": "p {\n    ___: blue;\n}",
+      "options": ["color", "text-color", "font-color", "background"],
+      "answer": 0,
+      "explanation": "الخاصية color بتغيّر لون النص."
+    }
+  ]
+}

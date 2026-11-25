@@ -1,0 +1,233 @@
+{
+  "title": "CSS Background Quiz",
+  "description": "اختبر نفسك في background-image, repeat, position, attachment, size و linear-gradient.",
+  "timePerQuestion": 30,
+  "points": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "أنهي سطر صحيح لوضع صورة كخلفية للعنصر؟",
+      "code": "div {\n    /* ??? */\n}",
+      "options": [
+        "background-image: url(\"bg.jpg\");",
+        "background-image: \"bg.jpg\";",
+        "background: image(bg.jpg);",
+        "background-img: url(bg.jpg);"
+      ],
+      "answer": 0,
+      "explanation": "الخاصية الصحيحة هي background-image، وقيمتها لازم تكون بالدالة url() وبداخلها مسار الصورة."
+    },
+    {
+      "type": "mc",
+      "question": "إيه اللي هيحصل للصورة في الكود ده؟",
+      "code": "div {\n    background-image: url(\"dot.png\");\n    background-repeat: repeat-x;\n}",
+      "options": [
+        "بتتكرر أفقيًا فقط",
+        "بتتكرر رأسيًا فقط",
+        "بتظهر مرة واحدة بدون تكرار",
+        "بتتكرر أفقيًا ورأسيًا"
+      ],
+      "answer": 0,
+      "explanation": "repeat-x معناها تكرار الصورة على المحور الأفقي (x) فقط."
+    },
+    {
+      "type": "mc",
+      "question": "إيه اللي هيحصل للصورة في الكود ده؟",
+      "code": "div {\n    background-image: url(\"line.png\");\n    background-repeat: repeat-y;\n}",
+      "options": [
+        "بتتكرر أفقيًا فقط",
+        "بتتكرر رأسيًا فقط",
+        "بتظهر مرة واحدة بدون تكرار",
+        "بتتكرر أفقيًا ورأسيًا"
+      ],
+      "answer": 1,
+      "explanation": "repeat-y معناها تكرار الصورة على المحور الرأسي (y) فقط."
+    },
+    {
+      "type": "mc",
+      "question": "كام مرة هتظهر الصورة داخل العنصر؟",
+      "code": "div {\n    background-image: url(\"logo.png\");\n    background-repeat: no-repeat;\n}",
+      "options": [
+        "مرة واحدة",
+        "بتتكرر أفقيًا",
+        "بتتكرر رأسيًا",
+        "بتتكرر في الاتجاهين"
+      ],
+      "answer": 0,
+      "explanation": "no-repeat بتمنع التكرار تمامًا، فالصورة بتظهر مرة واحدة بس."
+    },
+    {
+      "type": "mc",
+      "question": "فين هتظهر الصورة داخل العنصر؟",
+      "code": "div {\n    background-image: url(\"logo.png\");\n    background-repeat: no-repeat;\n    background-position: left center;\n}",
+      "options": [
+        "أعلى اليسار",
+        "منتصف الحافة اليسرى",
+        "منتصف الحافة اليمنى",
+        "أسفل اليسار"
+      ],
+      "answer": 1,
+      "explanation": "left للمحور الأفقي (يسار)، وcenter للمحور الرأسي (منتصف)، فالصورة بتبقى على اليسار في المنتصف."
+    },
+    {
+      "type": "mc",
+      "question": "فين هتظهر الصورة داخل العنصر؟",
+      "code": "div {\n    background-image: url(\"logo.png\");\n    background-repeat: no-repeat;\n    background-position: top center;\n}",
+      "options": [
+        "أعلى العنصر في المنتصف",
+        "أسفل العنصر في المنتصف",
+        "أعلى اليمين",
+        "في منتصف العنصر تمامًا"
+      ],
+      "answer": 0,
+      "explanation": "top معناها الأعلى، وcenter بتوسّط الصورة أفقيًا، فتظهر في أعلى المنتصف."
+    },
+    {
+      "type": "mc",
+      "question": "إيه معنى background-attachment: scroll (القيمة الافتراضية)؟",
+      "code": "body {\n    background-attachment: scroll;\n}",
+      "options": [
+        "الخلفية بتفضل ثابتة على الشاشة",
+        "الخلفية بتتحرك مع العنصر أثناء التمرير",
+        "الخلفية بتتكرر أثناء التمرير",
+        "الخلفية بتتكبّر أثناء التمرير"
+      ],
+      "answer": 1,
+      "explanation": "scroll معناها إن الخلفية بتتحرك مع العنصر لما تعمل scroll. أما fixed فبتثبّتها بالنسبة للشاشة."
+    },
+    {
+      "type": "mc",
+      "question": "إيه تأثير القيمة contain في الكود ده؟",
+      "code": "div {\n    background-image: url(\"photo.jpg\");\n    background-size: contain;\n}",
+      "options": [
+        "الصورة بتظهر كاملة بدون قص وممكن يفضل فراغ",
+        "الصورة بتملا العنصر كله وممكن تتقص",
+        "الصورة بتتحول لحجمها الأصلي",
+        "الصورة بتتثبت على الشاشة"
+      ],
+      "answer": 0,
+      "explanation": "contain بتصغّر أو تكبّر الصورة لحد ما تظهر كلها داخل العنصر، فممكن يفضل فراغ على جانب."
+    },
+    {
+      "type": "mc",
+      "question": "إزاي هيظهر التدرج اللوني في الكود ده؟",
+      "code": "div {\n    background: linear-gradient(to bottom, red, blue);\n}",
+      "options": [
+        "أحمر من فوق وبيتحول لأزرق تحت",
+        "أحمر من تحت وبيتحول لأزرق فوق",
+        "أحمر من اليسار وبيتحول لأزرق عند اليمين",
+        "أحمر من اليمين وبيتحول لأزرق عند اليسار"
+      ],
+      "answer": 0,
+      "explanation": "to bottom معناها إن التدرج بيتحرك ناحية الأسفل، فاللون الأول red في الأعلى والتاني blue في الأسفل."
+    },
+    {
+      "type": "mc",
+      "question": "إزاي هيظهر التدرج اللوني في الكود ده؟",
+      "code": "div {\n    background: linear-gradient(to left, red, blue);\n}",
+      "options": [
+        "أحمر من اليسار وبيتحول لأزرق عند اليمين",
+        "أحمر من اليمين وبيتحول لأزرق عند اليسار",
+        "أحمر من فوق وبيتحول لأزرق تحت",
+        "أحمر من تحت وبيتحول لأزرق فوق"
+      ],
+      "answer": 1,
+      "explanation": "to left معناها إن التدرج بيتحرك ناحية اليسار، فاللون red بيبدأ من اليمين وblue بينتهي عند اليسار."
+    },
+    {
+      "type": "tf",
+      "question": "لو حطيت background-image ومكتبتش background-repeat، الصورة بتتكرر تلقائيًا في الاتجاهين الأفقي والرأسي.",
+      "answer": true,
+      "explanation": "القيمة الافتراضية لـ background-repeat هي repeat، فالصورة بتتكرر أفقيًا ورأسيًا لحد ما تملا العنصر."
+    },
+    {
+      "type": "tf",
+      "question": "background-size: contain بتقص جزء من الصورة عشان تغطي العنصر بالكامل.",
+      "answer": false,
+      "explanation": "ده شغل cover. أما contain فبتظهر الصورة كلها بدون قص، وممكن يفضل فراغ في العنصر."
+    },
+    {
+      "type": "tf",
+      "question": "background-attachment: fixed بتخلي الخلفية تتحرك مع الصفحة لما تعمل scroll.",
+      "answer": false,
+      "explanation": "fixed بتثبّت الخلفية بالنسبة للشاشة (viewport) فمبتتحركش مع التمرير. اللي بتتحرك مع العنصر هي scroll."
+    },
+    {
+      "type": "tf",
+      "question": "في linear-gradient(to top, red, blue) اللون الأحمر بيبدأ من أسفل العنصر واللون الأزرق بينتهي في أعلاه.",
+      "answer": true,
+      "explanation": "to top معناها إن التدرج بيتحرك ناحية الأعلى، فالبداية red من الأسفل والنهاية blue في الأعلى."
+    },
+    {
+      "type": "tf",
+      "question": "background-position: right bottom و background-position: bottom right بيدّوا نفس النتيجة.",
+      "answer": true,
+      "explanation": "لما بتستخدم كلمات مفتاحية (top, bottom, left, right) الترتيب مش مهم، والاتنين معناهم الركن السفلي الأيمن."
+    },
+    {
+      "type": "cc",
+      "question": "أكمل الكود: عايز الصورة تتكرر رأسيًا فقط.",
+      "code": "div {\n    background-image: url(\"bar.png\");\n    background-repeat: ___;\n}",
+      "options": [
+        "repeat-y",
+        "repeat-x",
+        "no-repeat",
+        "vertical"
+      ],
+      "answer": 0,
+      "explanation": "repeat-y هي القيمة اللي بتكرر الصورة على المحور الرأسي فقط."
+    },
+    {
+      "type": "cc",
+      "question": "أكمل الكود: عايز الصورة تظهر في الركن العلوي الأيسر.",
+      "code": "div {\n    background-image: url(\"logo.png\");\n    background-repeat: no-repeat;\n    background-position: ___;\n}",
+      "options": [
+        "top left",
+        "bottom right",
+        "center center",
+        "left bottom"
+      ],
+      "answer": 0,
+      "explanation": "top للأعلى وleft لليسار، فالصورة بتظهر في الركن العلوي الأيسر."
+    },
+    {
+      "type": "cc",
+      "question": "أكمل الكود: عايز الصورة تظهر كاملة بدون أي قص داخل العنصر.",
+      "code": "div {\n    background-image: url(\"photo.jpg\");\n    background-repeat: no-repeat;\n    background-size: ___;\n}",
+      "options": [
+        "cover",
+        "contain",
+        "fixed",
+        "scroll"
+      ],
+      "answer": 1,
+      "explanation": "contain بتظهر الصورة كلها بدون قص. أما cover فممكن تقص جزء منها."
+    },
+    {
+      "type": "cc",
+      "question": "أكمل الكود: عايز اللون الأحمر في أعلى العنصر واللون الأزرق في أسفله.",
+      "code": "div {\n    background: linear-gradient(___, red, blue);\n}",
+      "options": [
+        "to top",
+        "to bottom",
+        "to left",
+        "to right"
+      ],
+      "answer": 1,
+      "explanation": "to bottom بتخلي التدرج يتحرك من أعلى لأسفل، فالأحمر (البداية) فوق والأزرق (النهاية) تحت."
+    },
+    {
+      "type": "cc",
+      "question": "أكمل الكود: عايز الخلفية تفضل ثابتة وإنت بتعمل scroll للصفحة.",
+      "code": "body {\n    background-image: url(\"city.jpg\");\n    background-attachment: ___;\n}",
+      "options": [
+        "scroll",
+        "fixed",
+        "cover",
+        "no-repeat"
+      ],
+      "answer": 1,
+      "explanation": "fixed بتثبّت الخلفية بالنسبة للشاشة فمبتتحركش مع التمرير."
+    }
+  ]
+}
